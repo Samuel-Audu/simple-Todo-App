@@ -82,7 +82,7 @@ class _HomePageState extends State<HomePage> {
                 taskName: db.todoList[index][0],
                 taskCompleted: db.todoList[index][1],
                 onChanged: (value) => checkBoxChanged(value, index),
-                deleteTask: (context) => deleteTask(index),
+                deleteTask: () => deleteTask(index),
               );
             })));
   }
